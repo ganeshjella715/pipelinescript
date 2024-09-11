@@ -1,17 +1,2 @@
-pipeline{
-agent any
-stages{
-stage('pollSCM test'){
-steps('pollscm****'){
-steps{
-                echo "welcome build periodically"
-                script{
-                date= new Date();
-                print date
-                }
-            }
-}
-
-}
-}
-}
+echo "pollscm test"
+echo pollscmtest
