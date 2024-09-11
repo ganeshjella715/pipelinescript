@@ -1,6 +1,9 @@
 pipeline{
     agent any
-    stages('welcome to pipeline'){
+triggers{
+cron('H/2 * * * *')
+}
+  stages('welcome to pipeline'){
         stage('stage one'){
             steps{
                 echo "welcome"
