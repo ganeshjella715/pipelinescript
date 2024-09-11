@@ -3,10 +3,10 @@ pipeline{
 triggers{
 cron('H/2 * * * *')
 }
-  stages('welcome to pipeline'){
+  stages('welcome to pipeline periodically'){
         stage('stage one'){
             steps{
-                echo "welcome"
+                echo "welcome build periodically"
                 script{
                 date= new Date();
                 print date
